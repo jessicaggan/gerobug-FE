@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules and Guidelines</title>
+
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/rules.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id=logo-atas>
+                <a href="../pages/rules.html"><img src="../images/logo-black.png"></a>
+            </div>
+
+            <ul>
+                <li><a class="active" href="../pages/rules.html">Rules & Guidelines</a></li>
+                <li><a href="../pages/hallOfFame.html">Hall Of Fame</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col-4">
+                <div id="simple-list-example"
+                    class="d-flex flex-column gap-4 simple-list-example-scrollspy text-left">
+                    <a class="p-1 rounded" href="#1">Responsible Disclosure Policy</a>
+                    <a class="p-1 rounded" href="#2">Bounty Terms</a>
+                    <a class="p-1 rounded" href="#3">In Scope</a>
+                    <a class="p-1 rounded" href="#4">Out Of Scope</a>
+                    <a class="p-1 rounded" href="#5">Report Guidelines</a>
+                    <a class="p-1 rounded" href="#6">FAQ</a>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
+                    data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                    <h4 id="1">Responsible Disclosure Policy</h4>
+                    <p>We acknowledge your contribution and allow you to disclose or publish the vulnerabilities that
+                        you have found. You can refer to the following disclosure policy:</p>
+                    <ul>
+                        <li>You give us reasonable time to investigate and mitigate an issue that you report before
+                            making any information about the report public or sharing such information with others.</li>
+                        <li>You do not interact with an individual account (which includes modifying or accessing data
+                            from the account) if the account owner has not consented to such actions.</li>
+                        <li>You make a good faith effort to avoid privacy violations and disruptions to others,
+                            including (but not limited to) unauthorised access to or destruction of data, and
+                            interruption or degradation of our services.</li>
+                        <li>You are required to act in good-faith security research to prevent disruptions and produce
+                            minimum to no impact for Tokopedia and other Tokopedia users.</li>
+                        <li>You do not exploit a security issue that you discover for any reason. (This includes
+                            demonstrating additional risk, such as attempted compromise of sensitive company data or
+                            probing for additional issues.)</li>
+                        <li>You do not intentionally violate any other applicable laws or regulations, including (but
+                            not limited to) laws and regulations prohibiting the unauthorised access to data.</li>
+                        <li>For the purposes of this policy, you are not authorised to access user data or company data,
+                            including (but not limited to) personally identifiable information and data relating to an
+                            identified or identifiable natural person, except as part of vulnerability validation.</li>
+                        <li>If you want to publish the vulnerability you reporting, please give us reasonable time to
+                            fix it and you can disclose it to the public after you receive approval from Tokopedia team
+                            and at least 3 months after the vulnerability is fixed.</li>
+                        <li>Tokopedia reserves the right to decide whether submitted reports are allowed to be published
+                            to the public or not.</li>
+                        <li>Reports with ‘critical’ severity are not allowed to be published solely by Researchers.</li>
+                        <li>If you want to publish the report to the public, you are required to submit a disclosure
+                            request via Tokopedia Bug Bounty portal and obtain written consent from Tokopedia, and wait
+                            at least 3 months after the vulnerability is fixed.</li>
+                        <li>If you publish reports without Tokopedia’s consent (for any reasons : education, popularity,
+                            etc), we will not hesitate to initiate a lawsuit or take legal action against you.</li>
+                    </ul>
+                    <h4 id="2">Bounty Terms</h4>
+                    <p>We recognise and reward security researchers who help us to keep Tokopedia’s system and data safe
+                        by reporting vulnerabilities in our services. Monetary bounties for such reports are entirely at
+                        Tokopedia's discretion, based on risk, impact and other factors. To potentially qualify for a
+                        bounty, you first need to meet the following requirements:</p>
+                    <ul>
+                        <li>You are required to read and agree with Terms and Conditions on Tokopedia Bug Bounty portal
+                            before submitting any reports.</li>
+                        <li>You are not allowed to submit the report by contacting Tokopedia employees directly or
+                            through other channels.</li>
+                        <li>Adhere to our responsible disclosure policy (see above).</li>
+                        <li>Report a security bug: identify a vulnerability in our services or infrastructure which
+                            creates a security or privacy risk. (Note that Tokopedia reserves the right to determine the
+                            risk of an issue or bug in the report, as not all software bugs are security issues and have
+                            security or privacy risk.)</li>
+                        <li>Your report must describe a problem involving one of the products or services listed below
+                            (See "In Scope" and “Out Scope”).</li>
+                        <li>We specifically exclude certain types of potential security issues; these are listed below
+                            (See "In Scope" and “Out Scope”).</li>
+                        <li>Submit your report via our "Report a security vulnerability" form (one issue per report) and
+                            respond to the report with any updates. Please do not contact employees directly or through
+                            other channels to submit a report.</li>
+                        <li>If you inadvertently cause a privacy violation or disruption (such as accessing account
+                            data, service configurations or other confidential information) while investigating an
+                            issue, you must disclose this in your report.</li>
+                        <li>Use test accounts when investigating issues. If you cannot reproduce an issue with a test
+                            account, you can use a real account (except for automated testing). Do not interact with
+                            other accounts without consent. In turn, we will follow these guidelines when evaluating
+                            reports under our bug bounty program.</li>
+                        <li>We investigate and respond to all valid reports. Due to the volume of reports that we
+                            receive, however, we prioritise evaluations based on risk and other factors. Tokopedia will
+                            provide responses and initial acknowledgement to the submitted Bug Bounty Report, maximum,
+                            in 3 (three) Working Days.</li>
+                        <li>In determining the issue severity, Tokopedia is using the Common Vulnerability Scoring
+                            System (CVSS) calculator along with risk-based approach analysis.</li>
+                        <li>We determine bounty amounts based on a variety of factors, including (but not limited to)
+                            impact, ease of exploitation and quality of the report.</li>
+                        <li>We aim to pay similar amounts for similar issues, but bounty amounts and qualifying issues
+                            may change over time. Past rewards do not necessarily guarantee similar amounts of rewards
+                            in the future.</li>
+                        <li>In the event of duplicate reports, reward will be awarded to the first researcher who
+                            submitted a valid Bug Bounty Report based on Tokopedia analysis and discretion.(Tokopedia
+                            reserves the right to determine whether a Bug Bounty Report is a duplicate, and Tokopedia is
+                            not required to disclose the details of the Bug Bounty Report.) A given bounty is only paid
+                            to one individual.</li>
+                        <li>We reserve the right to publish reports (and accompanying updates).</li>
+                    </ul>
+                    <h4 id="3">In Scope</h4>
+                    <ul>
+                        <li>You are required to read and agree with Terms and Conditions on Tokopedia Bug Bounty portal
+                            before submitting any reports.</li>
+                        <li>You are not allowed to submit the report by contacting Tokopedia employees directly or
+                            through other channels.</li>
+                        <li>Adhere to our responsible disclosure policy (see above).</li>
+                        <li>Report a security bug: identify a vulnerability in our services or infrastructure which
+                            creates a security or privacy risk. (Note that Tokopedia reserves the right to determine the
+                            risk of an issue or bug in the report, as not all software bugs are security issues and have
+                            security or privacy risk.)</li>
+                        <li>Your report must describe a problem involving one of the products or services listed below
+                            (See "In Scope" and “Out Scope”).</li>
+                        <li>We specifically exclude certain types of potential security issues; these are listed below
+                            (See "In Scope" and “Out Scope”).</li>
+                        <li>Submit your report via our "Report a security vulnerability" form (one issue per report) and
+                            respond to the report with any updates. Please do not contact employees directly or through
+                            other channels to submit a report.</li>
+                        <li>If you inadvertently cause a privacy violation or disruption (such as accessing account
+                            data, service configurations or other confidential information) while investigating an
+                            issue, you must disclose this in your report.</li>
+                        <li>Use test accounts when investigating issues. If you cannot reproduce an issue with a test
+                            account, you can use a real account (except for automated testing). Do not interact with
+                            other accounts without consent. In turn, we will follow these guidelines when evaluating
+                            reports under our bug bounty program.</li>
+                        <li>We investigate and respond to all valid reports. Due to the volume of reports that we
+                            receive, however, we prioritise evaluations based on risk and other factors. Tokopedia will
+                            provide responses and initial acknowledgement to the submitted Bug Bounty Report, maximum,
+                            in 3 (three) Working Days.</li>
+                        <li>In determining the issue severity, Tokopedia is using the Common Vulnerability Scoring
+                            System (CVSS) calculator along with risk-based approach analysis.</li>
+                        <li>We determine bounty amounts based on a variety of factors, including (but not limited to)
+                            impact, ease of exploitation and quality of the report.</li>
+                        <li>We aim to pay similar amounts for similar issues, but bounty amounts and qualifying issues
+                            may change over time. Past rewards do not necessarily guarantee similar amounts of rewards
+                            in the future.</li>
+                        <li>In the event of duplicate reports, reward will be awarded to the first researcher who
+                            submitted a valid Bug Bounty Report based on Tokopedia analysis and discretion.(Tokopedia
+                            reserves the right to determine whether a Bug Bounty Report is a duplicate, and Tokopedia is
+                            not required to disclose the details of the Bug Bounty Report.) A given bounty is only paid
+                            to one individual.</li>
+                        <li>We reserve the right to publish reports (and accompanying updates).</li>
+                    </ul>
+
+                    <h4 id="4">Out Of Scope</h4>
+                    <pre><code>- 3rd Party Apps (Microsite, Wordpress, CMS, Blog, Even Inside tokopedia.com/* ,etc. ) <br>- 3rd Party Plugins</code></pre>
+                    <h4 id="5">Report Guidelines</h4>
+                    <ul>
+                        <li>For security bug report, please create report through this portal , including proof of
+                            concept that contains: step by steps, screenshoot and the remediation. Don't forget to
+                            attach proof of concept video to reproduce the vulnerabilty.</li>
+                        <li>If you do not have a Bug Bounty account, you are required to register an account first.</li>
+                        <li>Please use fullname that match with your Citizen ID and Bank Account</li>
+                        <li>Researchers are required to notify Tokopedia on their report if there are any privacy
+                            violations or disruptions that inadvertently occurred while finding vulnerability, such as
+                            unauthorized access to other users data, service configurations or other confidential
+                            information.</li>
+                    </ul>
+                    <h4 id="6">FAQ</h4>
+                    <p><strong>Q: What if I found a vulnerability, but I don't know how to exploit it?</strong></p>
+                    <p>A: We expect that vulnerability reports sent to us have a valid attack scenario to qualify for a
+                        reward, and we consider it as a critical step when doing vulnerability research. Reward amounts
+                        are decided based on the maximum impact of the vulnerability, and the panel is willing to
+                        reconsider a reward amount, based on new information (such as a chain of bugs, or a revised
+                        attack scenario).</p>
+                    <p>A: We expect that vulnerability reports sent to us have a valid attack scenario to qualify for a
+                        reward, and we consider it as a critical step when doing vulnerability research. Reward amounts
+                        are decided based on the maximum impact of the vulnerability, and the panel is willing to
+                        reconsider a reward amount, based on new information (such as a chain of bugs, or a revised
+                        attack scenario).</p>
+                    <p>A: The reward panel consists of the members of the Tokopedia Security Team.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="copyright">
+            <p>&copy; 2022 GEROBUG</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

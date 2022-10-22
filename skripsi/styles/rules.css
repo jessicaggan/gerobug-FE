@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #F9F3F3;
+    font-family: 'Libre Franklin', sans-serif;
+    overflow-y: scroll;
+}
+
+main{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+#row a p h4{
+    font-family: 'Libre Franklin', sans-serif;
+    text-decoration: none;
+    text-align: none;
+    color: black;
+    margin-left: 3vw;
+    font-size: 2vh;
+}
+
+.col-4 a{
+    text-decoration: none;
+    color: black;
+}
+
+.col-4 a.active{
+    text-decoration: none;
+    color: #C82A3D;
+}
+
+#simple-list-example{
+    border-right: 1px solid black;
+}
