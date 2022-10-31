@@ -1,0 +1,79 @@
+
+.notification{
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+    background: linear-gradient(91.75deg, #F53149 -9.31%, #171526 130.93%);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding-left: 20px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: flex-end;
+}
+
+.notification svg{
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.notification .notif-details{
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+
+.col-header{
+    font-size: 20;
+    font-weight: bold;
+}
+
+.card{
+    margin-top: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+}
+
+.card .card-title{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card .card-type{
+    font-weight: 16px;
+    padding-top: 4px;
+}
+
+.card .card-time{
+    font-weight: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.card button{
+    background-color: #48409E;
+    border-width: 0;
+    border-radius: 20px;
+    color: white;
+    height: 30px;
+    font-size: 12px;
+}
+
+.card .finished{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    color: #2BA700;
+}
