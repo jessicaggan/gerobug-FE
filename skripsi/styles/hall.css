@@ -23,6 +23,7 @@ body{
     padding-right: 2vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #title {
@@ -53,6 +54,7 @@ body{
     color: black;
     text-align: left;
     height: 30px;
+    padding: 4px;
 }
 
 .leaderboard th,
@@ -60,6 +62,14 @@ body{
     padding: 15px;
 }
 
-tr.leaderboard td {
+th, td {
+    padding: 8px;
+    text-align: left;
+    /* border-bottom: 1px solid gray; */
+  }
+
+td {
     border-bottom: 1pt solid #ff000d;
   }
+
+  
